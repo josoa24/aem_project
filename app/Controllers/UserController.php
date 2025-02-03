@@ -12,6 +12,7 @@ class UserController extends BaseController
     {
         return view('enrollement');
     }
+    
     public function register()
     {
         $userModel = new \App\Models\UserModel();

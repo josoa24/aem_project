@@ -24,6 +24,7 @@ h2 {
 }
 
 .form-container {
+
     background: rgba(255, 255, 255, 0.9);
     padding: 25px;
     border-radius: 10px;
@@ -96,7 +97,8 @@ input[type="file"] {
 @media screen and (max-width: 2080px) {
 
     .form-container {
-        width: 35%;
+        min-width: 400px;
+        max-width: 35%;
     }
 }
 
