@@ -25,17 +25,17 @@ class UserController extends BaseController
         if ($name == null) {
             echo "null";
         }
-        // $data = [
-        //     'aem_name'      => $name,
-        //     'aem_first_name' => $first_name,
-        //     'aem_country'    => $country,
-        //     'aem_city'       => $city,
-        //     'aem_photos' => $photosPath
-        // ];
+        $data = [
+            'aem_name'      => $name,
+            'aem_first_name' => $first_name,
+            'aem_country'    => $country,
+            'aem_city'       => $city,
+            'aem_photos' => $photosPath
+        ];
 
 
-        // if ($userModel->insert($data)) {
-        //     echo "Login";
-        // }
+        if ($userModel->insert($data)) {
+            // return view("acceuil");
+        }
     }
 }
