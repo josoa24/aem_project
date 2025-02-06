@@ -9,7 +9,23 @@ class UserModel extends Model
     protected $table      = 'aem_user';
     protected $primaryKey = 'aem_id';
 
-    protected $allowedFields = ['aem_name', 'aem_first_name', 'aem_address', 'aem_country', 'aem_city', 'aem_photos'];
+    protected $allowedFields = [
+        'aem_name',
+        'aem_first_name',
+        'aem_date_of_birth',
+        'aem_place_of_birth',
+        'aem_id_number',
+        'aem_id_issue_date',
+        'aem_id_issue_place',
+        'aem_country',
+        'aem_state',
+        'aem_city',
+        'aem_identity_photo',
+        'aem_payment_screenshot',
+        'aem_sex',
+        'aem_phone_number',
+        'aem_user_password'
+    ];
 
     public function getUserById($id)
     {

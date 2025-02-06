@@ -7,13 +7,10 @@
 }
 
 body {
-    background-size: cover;
-    background-position: center;
+    width: 100%;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
 h2 {
@@ -24,10 +21,11 @@ h2 {
 }
 
 .form-container {
-
+    overflow: hidden;
     background: rgba(255, 255, 255, 0.9);
     padding: 25px;
     border-radius: 10px;
+    margin: 20px auto;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -40,7 +38,7 @@ label {
 input,
 select {
     width: 100%;
-    height: 40px;
+    height: 35px;
     padding: 0 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -94,17 +92,60 @@ input[type="file"] {
     color: #5540d0;
 }
 
+.error-template {
+    height: 65px;
+    text-align: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(240, 10, 10, 0.68);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.succes-template {
+    text-align: 10px;
+    height: 65px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(157, 232, 185, 0.56);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.error-template p {
+    font-size: 14px;
+    color: rgba(240, 10, 10, 0.68);
+}
+
+.succes-template p {
+    font-size: 14px;
+    color: rgba(157, 232, 185, 0.56);
+
+}
+
 @media screen and (max-width: 2080px) {
 
     .form-container {
-        min-width: 400px;
+        min-width: 500px;
         max-width: 35%;
     }
 }
 
 @media screen and (max-width: 470px) {
     .form-container {
-        width: 100%;
+        width: 95%;
         padding: 15px;
     }
 

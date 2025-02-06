@@ -9,16 +9,25 @@ CREATE TABLE aem_country (
     aem_country VARCHAR(50) NOT NULL
 );
 
-CREATE TABLE
-    aem_user (
-        aem_id_user INT AUTO_INCREMENT PRIMARY KEY,
-        aem_name VARCHAR(50),
-        aem_first_name VARCHAR(50),
-        aem_country INT,
-        aem_city VARCHAR(50),
-        aem_photos VARCHAR(150),
-        FOREIGN KEY (aem_country) REFERENCES aem_country (aem_id_country) ON DELETE CASCADE
-    );
+CREATE TABLE aem_user (
+    aem_id_user INT AUTO_INCREMENT PRIMARY KEY,
+    aem_name VARCHAR(50) NOT NULL,
+    aem_first_name VARCHAR(50) NOT NULL,
+    aem_date_of_birth DATE NOT NULL,
+    aem_place_of_birth VARCHAR(100) NOT NULL,
+    aem_id_number VARCHAR(20) NOT NULL UNIQUE,
+    aem_id_issue_date DATE NOT NULL,
+    aem_id_issue_place VARCHAR(100) NOT NULL,
+    aem_country INT NOT NULL,
+    aem_state VARCHAR(100) NOT NULL,
+    aem_city VARCHAR(100) NOT NULL,
+    aem_sex CHAR(1) NOT NULL,
+    aem_identity_photo VARCHAR(255),
+    aem_payment_screenshot VARCHAR(255),
+    aem_phone_number VARCHAR(20),
+    aem_user_password VARCHAR(255) NOT NULL,
+    FOREIGN KEY (aem_country) REFERENCES aem_country (aem_id_country) ON DELETE CASCADE
+);
 
 CREATE TABLE
     aem_payment (
