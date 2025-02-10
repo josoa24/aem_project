@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="<?= base_url('assets/icons/favicon-96x96.png') ?>" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="<?= base_url('assets/icons/favicon.svg') ?>" />
+    <link rel="shortcut icon" href="<?= base_url('assets/icons/favicon.ico') ?>" />
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url('assets/icons/apple-touch-icon.png') ?>" />
+    <link rel="manifest" href="<?= base_url('assets/icons/site.webmanifest') ?>" />
     <link rel="stylesheet" href="<?= base_url('assets/css/login.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/bootstrap/bootstrap.min.css') ?>">
     <link rel="stylesheet" href="<?= base_url('assets/bootstrap-icons/bootstrap-icons.css') ?>">
+    <script src="<?= base_url('assets/js/login.js') ?>" defer></script>
     <title>Login</title>
 </head>
 
@@ -16,32 +22,43 @@
             <div class="right-element">
                 <div class="title">
                     <span class="title-sign-in">Sign In</span>
-                    <form action="loginClient" method="post">
+                    <?php include("messages.php"); ?>
+                    <form action="<?= base_url('loginUser') ?>" method="post">
                         <div class="form-group">
-                            <label for="email">Numero:</label>
+                            <label for="number">Numéro :</label>
                             <div class="input-group">
                                 <i class="bi bi-telephone"></i>
-                                <input type="text" id="email" name="email" value="Rakoto@email.com" placeholder="Email" required>
+                                <input type="text" id="number" name="number"
+                                    value="<?= session()->getFlashdata('error')['number']['value'] ?? '' ?>"
+                                    class="<?= isset(session()->getFlashdata('error')['number']['message']) ? 'error' : '' ?>"
+                                    placeholder="Votre numéro d'inscription" required>
                             </div>
+                            <?php if (isset(session()->getFlashdata('error')['number']['message'])): ?>
+                                <p class="error-text"><?= session()->getFlashdata('error')['number']['message']; ?></p>
+                            <?php endif; ?>
                         </div>
+
                         <div class="form-group">
-                            <label for="password">Password:</label>
+                            <label for="password">Mot de passe :</label>
                             <div class="input-group">
                                 <i class="bi bi-lock"></i>
-                                <input type="password" id="password" name="motDePasse" placeholder="Password" value="1234" required>
+                                <input type="password" id="password" name="motDePasse"
+                                    value="<?= session()->getFlashdata('error')['motDePasse']['value'] ?? '' ?>"
+                                    class="<?= isset(session()->getFlashdata('error')['motDePasse']['message']) ? 'error' : '' ?>"
+                                    placeholder="Mot de passe" required>
                             </div>
+                            <?php if (isset(session()->getFlashdata('error')['motDePasse']['message'])): ?>
+                                <p class="error-text"><?= session()->getFlashdata('error')['motDePasse']['message']; ?></p>
+                            <?php endif; ?>
                         </div>
-                        <button class="sign-in">sign in</button>
+
+                        <button class="sign-in">
+                          
+                            Sign in
+                        </button>
                     </form>
 
                 </div>
-            </div>
-            <div class="left-element">
-                <span class="big-title">Bienvenue dans notre communauté d'entraide!</span>
-                <img src="<?= base_url('assets/images/AEM_Final.png') ?>" alt="">
-                <span>
-                    Nous sommes heureux de vous compter parmi nous. Ensemble, nous œuvrons pour un avenir meilleur à Madagascar. N'hésitez pas à participer, échanger et faire grandir notre mission collective. À très bientôt !
-                </span>
             </div>
         </div>
     </div>

@@ -31,10 +31,9 @@ class PayementModel extends Model
 
         $builder = $this->db->table('aem_payment');
         $builder->select('*');
+        $builder->orderBy('aem_id_payment', 'DESC');
         $builder->join('aem_user', 'aem_payment.aem_id_user = aem_user.aem_id_user');
-
         $query = $builder->get();
-
         $result = $query->getResultArray();
 
         return $result;
@@ -45,5 +44,10 @@ class PayementModel extends Model
     public function insertPayement($data)
     {
         return $this->insert($data);
+    }
+
+    public function comfirmPayment($id_payment)
+    {
+        return $this->update($id_payment, ['aem_validation' => 1]);
     }
 }

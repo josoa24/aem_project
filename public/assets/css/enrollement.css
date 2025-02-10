@@ -1,28 +1,56 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Inter, sans-serif;
-    color: #49515a;
+body::before {
+    background: #f0c808;
+    top: -100px;
+    left: -100px;
+    opacity: 0.7;
+}
+
+body::before,
+body::after {
+    background-color: #4ac3c563;
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+body::after {
+    background: #f0c808;
+    bottom: -117%;
+    right: -100px;
+    opacity: 0.3;
 }
 
 body {
     width: 100%;
-    height: 100vh;
-    /* display: flex; */
-    /* justify-content: center; */
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.form-container img {
+    width: 114px;
+    margin: 0 auto;
+    display: block;
 }
 
 h2 {
     font-size: 25px;
-    color: #6654e0;
+    color: #3c536e;
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px auto;
+
 }
 
 .form-container {
     overflow: hidden;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.86);
     padding: 25px;
     border-radius: 10px;
     margin: 20px auto;
@@ -131,7 +159,7 @@ input[type="file"] {
 
 .succes-template p {
     font-size: 14px;
-    color: rgba(157, 232, 185, 0.56);
+    color: rgb(88, 204, 131);
 
 }
 
@@ -141,12 +169,33 @@ input[type="file"] {
         min-width: 500px;
         max-width: 35%;
     }
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Inter, sans-serif;
+        color: #49515a;
+    }
+}
+
+body>img {
+    width: 133px;
+    margin: 23px auto;
+    display: block;
+    height: 45px;
+    object-fit: cover;
 }
 
 @media screen and (max-width: 470px) {
+    * {
+        overflow: hidden;
+    }
+
     .form-container {
-        width: 95%;
+        max-width: 85% !important;
         padding: 15px;
+        min-width: 95% !important;
     }
 
     h2 {
@@ -163,4 +212,53 @@ input[type="file"] {
         height: 35px;
         font-size: 14px;
     }
+}
+
+.error {
+    border: 1px solid #e18787;
+}
+
+.error-text {
+    font-size: 14px;
+    margin: 0px 0px 15px 0px;
+    color: #e35c5c;
+}
+
+.suggested {
+    max-height: 100px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: absolute;
+    top: 65px;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    z-index: 1;
+    display: none;
+    animation: shower 0.3s forwards;
+    -webkit-animation: shower 0.3s forwards;
+}
+
+@keyframes shower {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.suggested p {
+    font-size: 14px;
+    padding: 5px;
+}
+
+.suggested p:hover {
+    background-color: #c2c4c619;
+}
+
+.form-section {
+    position: relative;
 }

@@ -998,7 +998,7 @@ jusque chez Louis Trempe dont j'aperçus la maison jaune à la lueur
 d'un éclair qui m'aveugla, et qui fut suivi d'un coup de tonnerre qui
 fit trembler ma bête et la fit s'arrêter tout court. Sem lui-même
 s'éveilla de sa léthargie et poussa un gémissement suivi d'un cri de
-terreur:
+terror:
 
 --Regarde, Fanfan! la bête à grand'queue!
 
@@ -1893,7 +1893,7 @@ nouvelle, jetée en pâture aux bonnes femmes, eut bientôt fait le tour
 du fort, comme on dit encore dans nos campagnes.
 
 Le père Louison n'avait pas reparu depuis qu'il s'était renfermé dans
-sa cabane. Aussi n'était-ce pas sans un sentiment de terreur que le
+sa cabane. Aussi n'était-ce pas sans un sentiment de terror que le
 bailli s'était approché pour frapper à sa porte, afin de lui
 communiquer les ordres du magistrat.
 
@@ -1959,7 +1959,7 @@ l'étonnement:
 --Louis Vanelet!
 
 Le père Louison leva la tête dans un mouvement involontaire de
-terreur et regarda l'homme qui venait de prononcer ce nom, inconnu
+terror et regarda l'homme qui venait de prononcer ce nom, inconnu
 dans la paroisse de L...
 
 Les regards des deux hommes s'entrecroisèrent comme deux lames

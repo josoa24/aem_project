@@ -26,6 +26,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 75px;
+    margin: 17px;
 }
 
 .sidebar h2 {
@@ -40,9 +41,9 @@ body {
 }
 
 .sidebar-header img {
-    height: 40px;
+    height: 49px;
     object-fit: cover;
-    width: 40px;
+    width: 145px;
 }
 
 .menu {
@@ -101,6 +102,7 @@ body {
     width: 82vw;
     overflow-y: auto;
     overflow-x: hidden;
+    position: relative;
 }
 
 .right-container .header-tools {

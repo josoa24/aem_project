@@ -198,18 +198,18 @@
 
 
 
-.list-budget .each-budget {
+.list-budget .each-item {
     display: flex;
     gap: 20px;
     height: 55px;
 }
 
-.each-budget:not(:last-child) {
+.each-item:not(:last-child) {
     border-bottom: 1px solid #d2d2d2;
 }
 
-.each-budget p,
-.each-budget .last-child {
+.each-item p,
+.each-item .last-child {
     display: flex;
     height: 100%;
     align-items: center;
@@ -219,9 +219,24 @@
     text-wrap: nowrap;
 }
 
+.each-item button {
+    width: 13%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 30px;
+    background-color: #637381;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
 
-
-.each-budget p:first-child span {
+.each-item p:first-child span {
     height: 20px;
     width: 120px;
     border-radius: 4px;
@@ -236,30 +251,30 @@
     color: #fff;
 }
 
-.each-budget p:first-child a {
+.each-item p:first-child a {
     text-decoration: none;
 }
 
-.each-budget p:first-child span {
+.each-item p:first-child span {
     background-color: #f1f5f9;
     color: #212b36 !important;
 }
 
 
-.each-budget .last-child {
+.each-item .last-child {
     gap: 10px;
     color: #212b36;
     position: relative;
 }
 
-.each-budget .last-child a {
+.each-item .last-child a {
     text-decoration: none;
     display: flex;
 }
 
-.each-budget a>button {
+.each-item a>button {
     width: 90px;
-    height: 25px;
+    height: 30px;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -282,7 +297,7 @@
 }
 
 
-.each-budget a>button:hover {
+.each-item a>button:hover {
     cursor: pointer;
     background-color: #136e44;
 }
@@ -358,14 +373,14 @@
     font-size: 14px;
 }
 
-.each-budget p,
-.each-budget a {
+.each-item p,
+.each-item a {
     font-size: 14px;
     width: 20%;
     justify-content: center;
 }
 
-.each-budget a {
+.each-item a {
     display: flex;
     height: 100%;
     justify-content: center;
@@ -373,7 +388,7 @@
     text-decoration: none;
 }
 
-.each-budget .last-child svg:hover {
+.each-item .last-child svg:hover {
     cursor: pointer;
 }
 
@@ -424,4 +439,75 @@
     text-wrap: normal;
 }
 
-/* #7a66ff */
+.images {
+    width: 100%;
+    height: 100%;
+    background-color: #00000063;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.3s;
+    z-index: 1;
+    animation: shw2 0.3s 0s forwards;
+    opacity: 0;
+}
+
+@keyframes shw2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.image-container svg:hover {
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.image-container img {
+    width: 700px;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+    animation: shw 0.3s forwards;
+}
+
+@keyframes shw {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+p span {
+    background-color: #4ac4c6;
+    padding: 2px 5px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+p span:hover {
+    cursor: pointer;
+}

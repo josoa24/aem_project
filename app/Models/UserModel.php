@@ -96,4 +96,32 @@ class UserModel extends Model
     {
         return $this->orderBy('created_at', 'DESC')->findAll();
     }
+
+
+    public function exist($field, $value)
+    {
+        $builder = $this->db->table($this->table);
+        $query = $builder->getWhere([$field => $value]);
+        $result = $query->getResultArray();
+        return $result;
+    }
+
+    
+    public function validLogin($number, $password)
+    {
+        $builder = $this->db->table($this->table);
+        $user = $builder->where('aem_phone_number', $number)
+            ->where('aem_user_password', $password)
+            ->get()
+            ->getRowArray();
+        return $user ? $user : null;
+    }
+
+
+    public function getPlace($place) {
+        $builder = $this->db->table($this->table); 
+        $query = $builder->select($place)
+                         ->get();
+        return $query->getResultArray();
+    }
 }

@@ -6854,7 +6854,7 @@ Un matin, qu'elle s'en retournait ainsi, elle crut distinguer tout
 à coup le long canon d'une carabine qui semblait la tenir en joue.
 Il dépassait obliquement le bord d'un petit tonneau, à demi enfoui
 entre les herbes, sur la marge d'un fossé. Emma, prête à défaillir
-de terreur, avança cependant, et un homme sortit du tonneau, comme
+de terror, avança cependant, et un homme sortit du tonneau, comme
 ces diables à boudin qui se dressent du fond des boîtes. Il avait
 des guêtres bouclées jusqu'aux genoux, sa casquette enfoncée
 jusqu'aux yeux, les lèvres grelottantes et le nez rouge. C'était
@@ -8640,7 +8640,7 @@ Elle s'arrêta.
 -- Où es-tu donc? Arrive!
 
 L'idée qu'elle venait d'échapper à la mort faillit la faire
-s'évanouir de terreur; elle ferma les yeux; puis elle tressaillit
+s'évanouir de terror; elle ferma les yeux; puis elle tressaillit
 au contact d'une main sur sa manche: c'était Félicité.
 
 -- Monsieur vous attend, Madame; la soupe est servie.
@@ -8994,7 +8994,7 @@ des espèces de romans à cartonnage rose et à style douceâtre,
 fabriqués par des séminaristes troubadours ou des bas bleus
 repenties. Il y avait le _Pensez-y bien_; _l'Homme du monde aux
 pieds de Marie_, par M. de, décoré de plusieurs ordres; _des
-Erreurs de Voltaire, à l'usage des jeunes gens_, etc.
+errors de Voltaire, à l'usage des jeunes gens_, etc.
 
 Madame Bovary n'avait pas encore l'intelligence assez nette pour
 s'appliquer sérieusement à n'importe quoi; d'ailleurs, elle
@@ -9464,7 +9464,7 @@ l'écart des sons moyens, et la basse-taille du ministre ronflait
 comme un orgue, tandis que les voix de femmes, répétant ses
 paroles, reprenaient en choeur, délicieusement. Ils étaient tous
 sur la même ligne à gesticuler; et la colère, la vengeance, la
-jalousie, la terreur, la miséricorde et la stupéfaction
+jalousie, la terror, la miséricorde et la stupéfaction
 s'exhalaient à la fois de leurs bouches entrouvertes. L'amoureux
 outragé brandissait son épée nue; sa collerette de guipure se
 levait par saccades, selon les mouvements de sa poitrine, et il
@@ -12350,7 +12350,7 @@ avoir la nuit auprès d'elle, cet homme étendu qui dormait, elle
 finit, à force de grimaces, par le reléguer au second étage; et
 elle lisait jusqu'au matin des livres extravagants où il y avait
 des tableaux orgiaques avec des situations sanglantes. Souvent une
-terreur la prenait, elle poussait un cri, Charles accourait.
+terror la prenait, elle poussait un cri, Charles accourait.
 
 -- Ah! va-t'en! disait-elle.
 
@@ -15033,7 +15033,7 @@ découpait des rondelles de papier pour couvrir les confitures, et
 Franklin récitait tout d'une haleine la table de Pythagore. Il
 était le plus heureux des pères, le plus fortuné des hommes.
 
-Erreur! une ambition sourde le rongeait: Homais désirait la croix.
+error! une ambition sourde le rongeait: Homais désirait la croix.
 Les titres ne lui manquaient point:
 
 I° S'être, lors du choléra, signalé par un dévouement sans bornes;

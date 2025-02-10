@@ -1,0 +1,3 @@
+connexion cpanel : https://mg.n0c.com/login?returnUrl=%2F
+	login : wmkjpwwb
+	pass : mCJ42SDXFqjcue

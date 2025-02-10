@@ -1,19 +1,2 @@
-
-fakerphp
-friendsodphp
-kint-php
-laminas
-minkey179
-myclabs
-nexusphp
-nikic
-phar-io
-phpunit
-predis
-psr
-react
-sebastian
-staabm  
-mysymphony  
-
-Nir'infoQ2K25!!
+Memoire du formulaire 
+Generation du badge

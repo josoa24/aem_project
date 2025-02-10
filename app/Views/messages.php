@@ -1,8 +1,4 @@
-<?php if (isset($erreur)) { ?>
-    <div class="error-template">
-        <p> <?= $erreur ?> </p>
-    </div>
-<?php } else if (isset($succes)) { ?>
+<?php if (null !== ($succes = session()->getFlashdata('succes'))) { ?>
     <div class="succes-template">
         <p><?= $succes ?></p>
     </div>
