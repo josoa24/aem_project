@@ -1,4 +1,4 @@
-body::before {
+/* body::before {
     background: #f0c808;
     top: -100px;
     left: -100px;
@@ -21,7 +21,7 @@ body::after {
     bottom: -117%;
     right: -100px;
     opacity: 0.3;
-}
+} */
 
 body {
     width: 100%;
@@ -31,7 +31,7 @@ body {
     display: flex;
     justify-content: center;
     overflow-y: auto;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .form-container img {
@@ -49,7 +49,7 @@ h2 {
 }
 
 .form-container {
-    overflow: hidden;
+    /* overflow: hidden; */
     background: rgba(255, 255, 255, 0.86);
     padding: 25px;
     border-radius: 10px;
@@ -189,7 +189,7 @@ body>img {
 
 @media screen and (max-width: 470px) {
     * {
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .form-container {
@@ -226,7 +226,8 @@ body>img {
 
 .suggested {
     max-height: 100px;
-    overflow: hidden;
+    /* overflow: hidden;
+     */
     border: 1px solid #ccc;
     padding: 10px;
     position: absolute;

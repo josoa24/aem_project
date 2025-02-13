@@ -218,9 +218,9 @@
             'dev_requirement' => true,
         ),
         'phpunit/phpunit' => array(
-            'pretty_version' => '11.5.6',
-            'version' => '11.5.6.0',
-            'reference' => '3c3ae14c90f244cdda95028c3e469028e8d1c02c',
+            'pretty_version' => '11.5.7',
+            'version' => '11.5.7.0',
+            'reference' => 'e1cb706f019e2547039ca2c839898cd5f557ee5d',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),
